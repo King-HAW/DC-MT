@@ -1,0 +1,30 @@
+# Data Settings
+FeaRoot: /PATH/TO/FEATURE.npy
+ProRoot: /PATH/TO/PROBABILITY.npy
+QueryIndex: ./configs/all_query_index.csv
+Data_CLASSES: ['Class_0', 'Class_1', 'Class_2']
+TrainFold: ./configs/journal_subject_label.csv
+TestModel: /PATH/TO/MODEL_WEIGHT.pth
+
+# Training Settings
+deterministic: True
+seed: 6081
+n_fold: 5
+valid_fold: 2
+GPUs: [0]
+num_workers: 7
+batchsize: 40
+
+# Optimizer settings
+optim: Adam
+lr: 0.0001
+momentum: 0.9
+nesterov: False
+weight_decay: 0.0001
+
+# Model Settings
+arch: SimpleRNN
+Using_pretrained_weights: False
+Cls:
+  resume:
+

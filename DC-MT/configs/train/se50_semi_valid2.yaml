@@ -1,0 +1,51 @@
+# Data Settings
+DataRoot: /PATH/TO/H5FILE
+Data_CLASSES: ['Class_0', 'Class_1', 'Class_2']
+TrainFold: ./configs/fold_index.csv
+
+# Training Settings
+seed: 6081
+n_fold: 5
+valid_fold: 2
+GPUs: [0]
+num_workers: 7
+batchsize: 40
+label_bs: 10
+ema_decay: 0.99
+
+# Visulization Settings
+display_freq: 10
+display_ncols: 2
+display_id: 1
+display_winsize: 256
+display_server: http://localhost
+display_port: 10014
+display_env: main
+update_html_freq: 100
+
+# Optimizer settings
+optim: Adam
+lr: 0.0002
+momentum: 0.9
+nesterov: False
+weight_decay: 0.0001
+
+# Model Settings
+arch: se_resnext50_32x4d
+Using_pretrained_weights: True
+in_channels: 3
+img_size: 256
+lr_decay_freq: 15
+lr_decay: 0.5
+num_epoch: 50
+print_freq: 20
+valid_freq: 1
+save_model_freq: 1
+Cls:
+  resume:
+
+### Consistency Loss settings
+consistency_cls: 5
+consistency_att: 1
+consistency_rampup: 40
+

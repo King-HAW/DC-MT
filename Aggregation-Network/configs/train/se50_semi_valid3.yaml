@@ -1,0 +1,54 @@
+# Data Settings
+FeaRoot: /PATH/TO/FEATURE.npy
+ProRoot: /PATH/TO/PROBABILITY.npy
+QueryIndex: ./configs/all_query_index.csv
+Data_CLASSES: ['Class_0', 'Class_1', 'Class_2']
+TrainFold: ./configs/journal_subject_label.csv
+
+# Training Settings
+deterministic: True
+seed: 6081
+n_fold: 5
+valid_fold: 3
+GPUs: [1]
+num_workers: 7
+batchsize: 64
+label_bs: 16
+ema_decay: 0.99
+
+# Visulization Settings
+display_freq: 5
+display_ncols: 2
+display_id: 1
+display_winsize: 128
+display_server: http://localhost
+display_port: 10014
+display_env: main
+update_html_freq: 100
+
+# Optimizer settings
+optim: Adam
+lr: 0.001
+momentum: 0.9
+nesterov: False
+weight_decay: 0.0001
+
+# Model Settings
+arch: SimpleRNN
+Using_pretrained_weights: False
+in_channels: 3
+img_size: 256
+lr_decay_freq: 50
+lr_decay: 0.5
+num_epoch: 150
+print_freq: 20
+valid_freq: 5
+save_model_freq: 1
+Cls:
+  resume:
+
+### Consistency Loss settings
+consistency_cls: 5
+consistency_att: 1
+consistency_rampup: 100
+
