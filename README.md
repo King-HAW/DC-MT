@@ -35,12 +35,12 @@ If you use this code for your research, please cite our paper.
 ```
 @article{huo2022automatic,
   title={Automatic Grading Assessments for Knee MRI Cartilage Defects via Self-ensembling Semi-supervised Learning with Dual-Consistency},
-  author={Huo, Jiayu and Ouyang, Xi and Si, Liping and Xuan, Kai and Wang, Sheng and Yao, Weiwu and Liu, Ying and Xu, Jia and Qian, Dahong and Xue, Zhong and others},
+  author={Huo, Jiayu and Ouyang, Xi and Si, Liping and Xuan, Kai and Wang, Sheng and Yao, Weiwu and Liu, Ying and Xu, Jia and Qian, Dahong and Xue, Zhong and Wang, Qian and Shen, Dinggang and Zhang, Lichi},
   journal={Medical Image Analysis},
-  volume = {80},
+  volume={80},
   pages={102508},
   year={2022},
-  issn = {1361-8415},
+  issn={1361-8415},
   publisher={Elsevier}
 }
 ```
